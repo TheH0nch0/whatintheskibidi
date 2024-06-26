@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Checklist</title>
+</head>
+<body>
+    <h1>Checklist</h1>
+    {{ checklist | safe }}
+    <h2>Check off Task</h2>
+    <form action="/check" method="post">
+        <input type="text" name="index" placeholder="Enter index to check off">
+        <button type="submit">Check Off</button>
+    </form>
+    <a href="/">Go back to Add Task</a>
+</body>
+</html>
